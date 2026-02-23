@@ -218,3 +218,71 @@ h2 {
     border-radius: 8px;
   }
 }
+
+/* Carousel styles */
+
+.my-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--neutral-0);
+  background-color: var(--neutral-900);
+  padding: 40px 20px;
+  border-radius: 10px;
+  gap: 40px;
+}

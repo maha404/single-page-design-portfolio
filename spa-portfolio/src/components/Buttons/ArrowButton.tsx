@@ -1,5 +1,5 @@
-import arrowLeft from '../assets/icon-arrow-left.svg';
-import arrowRight from '../assets/icon-arrow-right.svg';
+import arrowLeft from '../../assets/icon-arrow-left.svg';
+import arrowRight from '../../assets/icon-arrow-right.svg';
 
 
 interface ArrowButtonProps {
