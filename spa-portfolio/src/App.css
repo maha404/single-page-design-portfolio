@@ -92,6 +92,25 @@ h2 {
 
 .hero-content {
   text-align: center;
+  width: 100%;
+  margin: 0 auto; /* Centers the content */
+  padding: 16px; /* Adds spacing on smaller screens */
+
+  @media screen and (max-width: 426px) {
+    max-width: 500px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+
+
+
 }
 
 
