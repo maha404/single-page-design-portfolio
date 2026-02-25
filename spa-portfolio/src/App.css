@@ -92,24 +92,24 @@ h2 {
 
 .hero-content {
   text-align: center;
-  width: 100%;
   margin: 0 auto; /* Centers the content */
-  padding: 16px; /* Adds spacing on smaller screens */
-
-  @media screen and (max-width: 426px) {
-    max-width: 500px;
-  }
 
   p {
     font-size: 18px;
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 40px;
   }
 
+  @media screen and (min-width: 426px) {
+    max-width: 500px;
 
+    h1 {
+      font-size: 56px;
+    }
 
+  }
 
 }
 
@@ -154,9 +154,45 @@ h2 {
 }
 
 .services-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr; /* Default: single column for mobile */
+  grid-template-rows: auto;
+  gap: 20px; /* Space between cards */
+
+  @media screen and (min-width: 426px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Two columns for tablet */
+    grid-template-rows: auto auto; /* Adjust rows automatically */
+    grid-template-areas:
+      "graphic-design ui apps"
+      "photography illustrations motion-graphics";
+  
+  }
+
+}
+
+.graphic-design-card {
+  grid-area: graphic-design;
+}
+
+.ui-card {
+  grid-area: ui;
+}
+
+.apps-card {
+  grid-area: apps;
+}
+
+.photography-card {
+  grid-area: photography;
+}
+
+.illustrations-card {
+  grid-area: illustrations;
+}
+
+.motion-graphics-card {
+  grid-area: motion-graphics;
 }
 
 .apps-card {
