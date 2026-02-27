@@ -18,6 +18,11 @@ body {
   gap: 40px;
   padding: 16px;
   margin: 0;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
 }
 
 #root {
@@ -111,6 +116,10 @@ h2 {
 
   }
 
+  @media screen and (min-width: 1024px) {
+    max-width: 755px;
+  }
+
 }
 
 
@@ -136,7 +145,7 @@ h2 {
   flex-direction: column;
   background-color: var(--summer-yellow-500);
   padding: 20px 20px;
-  width: 50%;
+  
   border-radius: 8px;
   gap: 2rem;
 
@@ -155,20 +164,36 @@ h2 {
 
 .services-section {
   display: grid;
-  grid-template-columns: 1fr; /* Default: single column for mobile */
+  grid-template-columns: 1fr 1fr; /* Default: single column for mobile */
   grid-template-rows: auto;
   gap: 20px; /* Space between cards */
+  grid-template-areas:
+    "graphic-design graphic-design"
+    "ui apps"
+    "illustrations illustrations"
+    "photography photography"
+    "motion-graphics motion-graphics";
+}
 
-  @media screen and (min-width: 426px) {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Two columns for tablet */
-    grid-template-rows: auto auto; /* Adjust rows automatically */
+@media screen and (min-width: 426px) {
+  .services-section {
+    grid-template-columns: 2fr 1fr 1fr; /* Three columns for tablet */
+    grid-template-rows: auto auto auto; /* Adjust rows automatically */
     grid-template-areas:
       "graphic-design ui apps"
-      "photography illustrations motion-graphics";
-  
+      "graphic-design illustrations illustrations"
+      "photography motion-graphics motion-graphics";
   }
+}
 
+@media screen and (min-width: 1024px) {
+  .services-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Four columns for desktop */
+    grid-template-rows: auto; /* Adjust rows automatically */
+    grid-template-areas:
+      "graphic-design graphic-design ui apps photography photography"
+      "graphic-design graphic-design illustrations illustrations motion-graphics motion-graphics";
+  }
 }
 
 .graphic-design-card {
@@ -201,7 +226,7 @@ h2 {
   flex-direction: column;
   background-color: var(--pink-500);
   padding: 20px 20px;
-  width: 50%;
+  
   border-radius: 8px;
   gap: 2rem;
 
@@ -272,6 +297,52 @@ h2 {
     height: auto;
     border-radius: 8px;
   }
+
+  @media screen and (min-width: 426px) {
+   
+    img {
+      width: 300px;
+      height: auto;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    flex-direction: row;
+    text-align: left;
+    gap: 90px;
+    padding: 35px;
+   
+    img {
+      width: 445px;
+      height: auto;
+    }
+
+  }
+
+}
+
+.about-title {
+  font-size: 40px;
+  padding: 0px 20px;
+
+  @media screen and (min-width: 1024px) {
+      padding: 0px;
+  }
+
+}
+
+.about-description {
+  font-size: 18px;
+  padding: 0px 20px;
+
+  @media screen and (min-width: 1024px) {
+
+    padding: 0px;
+
+  }
+
 }
 
 /* Carousel styles */
@@ -281,6 +352,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  h2 {
+    font-size: 40px;
+  }
+
 }
 
 
@@ -330,6 +406,8 @@ h2 {
 }
 
 
+/* Contact */
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -339,5 +417,45 @@ h2 {
   background-color: var(--neutral-900);
   padding: 40px 20px;
   border-radius: 10px;
-  gap: 40px;
+  gap: 20px;
+ 
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 426px) {
+
+    p {
+      padding: 0px 80px;
+    }
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    text-align: left;
+    padding: 80px 64px;
+
+      p {
+        padding: 0px;
+      }
+  }
 }
+
+.contact-text-container {
+  padding: 0px 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0px;
+    width: 540px;
+  }
+
+
+}
+
