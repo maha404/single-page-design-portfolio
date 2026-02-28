@@ -1,14 +1,19 @@
 import { useState } from "react";
 import "../../App.css";
 import ArrowButton from "../Buttons/ArrowButton";
+import imageSlide1 from "../../assets/image-slide-1.jpg";
+import imageSlide2 from "../../assets/image-slide-2.jpg";
+import imageSlide3 from "../../assets/image-slide-3.jpg";
+import imageSlide4 from "../../assets/image-slide-4.jpg";
+import imageSlide5 from "../../assets/image-slide-5.jpg";
 
 export default function MyWork() {
     const images = [
-        "src/assets/image-slide-1.jpg",
-        "src/assets/image-slide-2.jpg",
-        "src/assets/image-slide-3.jpg",
-        "src/assets/image-slide-4.jpg",
-        "src/assets/image-slide-5.jpg",
+        imageSlide1,
+        imageSlide2,
+        imageSlide3,
+        imageSlide4,
+        imageSlide5
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

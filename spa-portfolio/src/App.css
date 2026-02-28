@@ -1,5 +1,6 @@
 :root {
   --neutral-900: black;
+  --neutral-400: #6A6662;
   --galactic-blue-500: #755CDE;
   --light-red-500: #E16B5B;
   --summer-yellow-500: #F6A560;
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: var(--neutral-200);
   display: flex;
   flex-direction: column;
@@ -35,8 +36,11 @@ h2 {
   margin: 0;
 }
 
+
+/* Buttons */
 .button {
   color: var(--neutral-0);
+  font-size: 16px;
   border: none;
   padding: 15px 16px;
   cursor: pointer;
@@ -89,6 +93,9 @@ h2 {
   outline-offset: 2px;
 }
 
+
+/* Layout */
+
 .nav {
   display: flex;
   height: 52px;
@@ -101,6 +108,7 @@ h2 {
 
   p {
     font-size: 18px;
+    color: var(--neutral-400);
   }
 
   h1 {
@@ -147,7 +155,7 @@ h2 {
   padding: 20px 20px;
   
   border-radius: 8px;
-  gap: 2rem;
+  gap: 3rem;
 
   img {
     width: 50%;
@@ -228,7 +236,7 @@ h2 {
   padding: 20px 20px;
   
   border-radius: 8px;
-  gap: 2rem;
+  gap: 3rem;
 
   img {
     width: 45%;
@@ -336,6 +344,7 @@ h2 {
 .about-description {
   font-size: 18px;
   padding: 0px 20px;
+  color: var(--neutral-400);
 
   @media screen and (min-width: 1024px) {
 
