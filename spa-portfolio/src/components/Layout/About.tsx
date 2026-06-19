@@ -11,7 +11,7 @@ export default function About() {
                 <p className="about-description">
                     I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!
                 </p>
-                <Button text="Free Consltation" className="button-light button" />
+                <Button text="Free Consultation" className="button-light button" />
             </div>
         </section>
     )
