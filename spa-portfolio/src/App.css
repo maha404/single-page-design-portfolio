@@ -148,6 +148,7 @@ h2 {
 .graphic-design-card {
   background-color: var(--galactic-blue-500);
   gap: 5rem;
+  grid-area: graphic-design;
 
   img {
     width: 50%;
@@ -157,6 +158,7 @@ h2 {
 .ui-card {
   background-color: var(--summer-yellow-500);
   gap: 3rem;
+  grid-area: ui;
 
   img {
     width: 50%;
@@ -207,33 +209,10 @@ h2 {
   }
 }
 
-.graphic-design-card {
-  grid-area: graphic-design;
-}
-
-.ui-card {
-  grid-area: ui;
-}
-
-.apps-card {
-  grid-area: apps;
-}
-
-.photography-card {
-  grid-area: photography;
-}
-
-.illustrations-card {
-  grid-area: illustrations;
-}
-
-.motion-graphics-card {
-  grid-area: motion-graphics;
-}
-
 .apps-card {
   background-color: var(--pink-500);
   gap: 3rem;
+  grid-area: apps;
 
   img {
     width: 45%;
@@ -243,6 +222,7 @@ h2 {
 .illustrations-card {
   background-color: var(--light-red-500);
   gap: 3rem;
+  grid-area: illustrations;
 
   img {
     width: 45%;
@@ -252,6 +232,7 @@ h2 {
 .photography-card {
   background-color: var(--cyan-500);
   gap: 3rem;
+  grid-area: photography;
 
   img {
     width: 45%;
@@ -261,6 +242,7 @@ h2 {
 .motion-graphics-card {
   background-color: var(--dark-purple-500);
   gap: 3rem;
+  grid-area: motion-graphics;
 
   img {
     width: 45%;
