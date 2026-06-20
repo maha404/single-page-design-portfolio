@@ -1,5 +1,5 @@
 import Logo from '../../assets/logo.svg'
-import Button from '../Buttons/Button'
+import { Button } from '../Buttons';
 
 export default function Nav() {
     return (
