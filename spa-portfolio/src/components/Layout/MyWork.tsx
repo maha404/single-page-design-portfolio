@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../App.css";
 import ArrowButton from "../Buttons/ArrowButton";
 import imageSlide1 from "../../assets/image-slide-1.jpg";
 import imageSlide2 from "../../assets/image-slide-2.jpg";
