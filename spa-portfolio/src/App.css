@@ -138,31 +138,32 @@ h2 {
   flex-direction: column;
   padding: 20px 20px;
   border-radius: 8px;
+}
 
-  img {
-    height: auto;
-    align-self: flex-end;
-  }
+/* Shared image styles for service cards */
+.service-card-image {
+  height: auto;
+  align-self: flex-end;
+}
+
+.service-card-image--large {
+  width: 50%;
+}
+
+.service-card-image--small {
+  width: 45%;
 }
 
 .graphic-design-card {
   background-color: var(--galactic-blue-500);
   gap: 5rem;
   grid-area: graphic-design;
-
-  img {
-    width: 50%;
-  }
 }
 
 .ui-card {
   background-color: var(--summer-yellow-500);
   gap: 3rem;
   grid-area: ui;
-
-  img {
-    width: 50%;
-  }
 }
 
 .services-container {
@@ -213,40 +214,24 @@ h2 {
   background-color: var(--pink-500);
   gap: 3rem;
   grid-area: apps;
-
-  img {
-    width: 45%;
-  }
 }
 
 .illustrations-card {
   background-color: var(--light-red-500);
   gap: 3rem;
   grid-area: illustrations;
-
-  img {
-    width: 45%;
-  }
 }
 
 .photography-card {
   background-color: var(--cyan-500);
   gap: 3rem;
   grid-area: photography;
-
-  img {
-    width: 45%;
-  }
 }
 
 .motion-graphics-card {
   background-color: var(--dark-purple-500);
   gap: 3rem;
   grid-area: motion-graphics;
-
-  img {
-    width: 45%;
-  }
 }
 
 .about {
