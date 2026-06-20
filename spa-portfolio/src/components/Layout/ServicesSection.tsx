@@ -1,4 +1,4 @@
-import ServicesCard from "./ServicesCard";
+import { ServicesCard } from "../Layout";
 import GraphicDesignimage from "../../assets/pattern-graphic-design.svg";
 import UIImage from "../../assets/pattern-ui-ux.svg";
 import AppsImage from "../../assets/pattern-apps.svg";

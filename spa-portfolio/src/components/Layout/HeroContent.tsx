@@ -1,5 +1,3 @@
-
-
 export default function HeroContent() {
     return (
         <section className="hero-content">
