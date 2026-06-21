@@ -199,9 +199,7 @@ h2 {
 @media screen and (min-width: 1024px) {
   .services-section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* Four columns for desktop */
     grid-template-rows: auto;
-    /* Adjust rows automatically */
     grid-template-areas:
       "graphic-design graphic-design ui apps photography photography"
       "graphic-design graphic-design illustrations illustrations motion-graphics motion-graphics";
